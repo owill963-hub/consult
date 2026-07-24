@@ -52,6 +52,55 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is CMMC and who needs to comply?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CMMC (Cybersecurity Maturity Model Certification) is the Department of Defense's framework for verifying that contractors protect Federal Contract Information and Controlled Unclassified Information. If your company holds or pursues DoD contracts that involve FCI or CUI, CMMC requirements apply to you \u2014 including small subcontractors in the Defense Industrial Base."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between CMMC Level 1 and Level 2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Level 1 covers 17 basic safeguarding practices for Federal Contract Information and allows annual self-assessment. Level 2 aligns with the 110 controls of NIST SP 800-171 for protecting Controlled Unclassified Information and, for most contracts, requires a third-party (C3PAO) assessment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a vCISO actually do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A virtual CISO gives you executive-level security leadership without a full-time hire: risk assessments, security roadmaps, policy development, NIST 800-171 alignment, SSP and POA&M ownership, vendor review, and audit preparation \u2014 scaled to a fraction of the cost of a salaried CISO."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is an SSP and a POA&M?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The System Security Plan (SSP) documents how your environment implements each NIST 800-171 control. The Plan of Action & Milestones (POA&M) tracks the controls you haven't fully met and how you'll close them. Both are foundational evidence for CMMC assessment and SPRS scoring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does O Williams Consulting work with clients?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We serve Maryland, Washington DC, and Virginia in person \u2014 including residential technology services for DMV homeowners \u2014 and work with defense contractors and growing businesses remotely nationwide."
+      }
+    }
+  ]
+}
+</script>
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -214,6 +263,16 @@ footer{background:#0A121D;color:#6E8093;padding:28px 0;font-family:'IBM Plex Mon
 footer a{color:#9FAEBC;text-decoration:none}
 footer a:hover{color:var(--porcelain)}
 
+
+/* ---------- FAQ ---------- */
+.faq{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line);padding:6px 0}
+.faq-item summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.faq-item summary::after{content:"+";font-family:'IBM Plex Mono',monospace;color:var(--signal);font-size:18px}
+.faq-item[open] summary::after{content:"–"}
+.faq-item h3{font-family:'Archivo',sans-serif;font-weight:800;font-size:16px;text-transform:uppercase;letter-spacing:.01em}
+.faq-item p{color:var(--steel);font-size:15px;max-width:70ch;padding:0 0 18px}
+
 /* reveal */
 .rv{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
 .rv.in{opacity:1;transform:none}
@@ -233,6 +292,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li><a href="#proof">Deployed Work</a></li>
       <li><a href="#operator">The Operator</a></li>
       <li><a href="#residential">Residential</a></li>
+      <li><a href="#faq">FAQ</a></li>
     </ul>
     <a class="nav-cta" href="mailto:oliver@gratus1.io?subject=Consultation%20Request">Book a Consult</a>
   </div>
@@ -404,6 +464,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Residential smart home, network security, and streaming services are still on the menu for Maryland, DC, and Virginia — same operator, same standard.</p>
     </div>
     <a class="btn btn-primary" href="mailto:oliver@gratus1.io?subject=Residential%20Services">Request Residential Service</a>
+  </div>
+</section>
+
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-tag">Straight Answers</div>
+      <h2>CMMC &amp; vCISO — Frequently Asked</h2>
+    </div>
+    <div class="faq rv">
+      <details class="faq-item"><summary><h3>What is CMMC and who needs to comply?</h3></summary><p>CMMC (Cybersecurity Maturity Model Certification) is the Department of Defense's framework for verifying that contractors protect Federal Contract Information and Controlled Unclassified Information. If your company holds or pursues DoD contracts that involve FCI or CUI, CMMC requirements apply to you — including small subcontractors in the Defense Industrial Base.</p></details>
+      <details class="faq-item"><summary><h3>What is the difference between CMMC Level 1 and Level 2?</h3></summary><p>Level 1 covers 17 basic safeguarding practices for Federal Contract Information and allows annual self-assessment. Level 2 aligns with the 110 controls of NIST SP 800-171 for protecting Controlled Unclassified Information and, for most contracts, requires a third-party (C3PAO) assessment.</p></details>
+      <details class="faq-item"><summary><h3>What does a vCISO actually do?</h3></summary><p>A virtual CISO gives you executive-level security leadership without a full-time hire: risk assessments, security roadmaps, policy development, NIST 800-171 alignment, SSP and POA&M ownership, vendor review, and audit preparation — scaled to a fraction of the cost of a salaried CISO.</p></details>
+      <details class="faq-item"><summary><h3>What is an SSP and a POA&M?</h3></summary><p>The System Security Plan (SSP) documents how your environment implements each NIST 800-171 control. The Plan of Action & Milestones (POA&M) tracks the controls you haven't fully met and how you'll close them. Both are foundational evidence for CMMC assessment and SPRS scoring.</p></details>
+      <details class="faq-item"><summary><h3>Where does O Williams Consulting work with clients?</h3></summary><p>We serve Maryland, Washington DC, and Virginia in person — including residential technology services for DMV homeowners — and work with defense contractors and growing businesses remotely nationwide.</p></details>
+    </div>
   </div>
 </section>
 
